@@ -1,0 +1,8 @@
+In terminal:
+# rmmod pcspkr
+# rmmod snd_pcsp
+
+Then:
+/etc/modprobe.d/nobeep.conf
+blacklist pcspkr
+blacklist snd_pcsp

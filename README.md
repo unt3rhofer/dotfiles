@@ -1,1 +1,1 @@
-:P
+Personal dotfiles and usefull scripts

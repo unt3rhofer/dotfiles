@@ -1,0 +1,3 @@
+exec_always xinput set-prop pointer:"Logitech G305" "libinput Natural Scrolling Enabled" 0
+exec_always xinput set-prop "ELAN06C6:00 04F3:3193 Touchpad" "libinput Tapping Enabled" 1
+exec_always xinput set-prop "ELAN06C6:00 04F3:3193 Touchpad" "libinput Natural Scrolling Enabled" 1

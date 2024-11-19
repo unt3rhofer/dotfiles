@@ -35,7 +35,7 @@ bar {
 }
 
 #WALLPAPER
-exec_always feh --bg-scale ~/Pictures/Wallpapers/wallpaper_japanese+samurai+temple+night+sea.jpg
+exec_always feh --bg-scale ~/Pictures/Wallpapers/wallpaper_samurai+temple.png
 
 
 #TRANSPARENCY

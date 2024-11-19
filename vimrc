@@ -1,4 +1,4 @@
-autocmd BufRead,BufNewFile /home/martin/Dotfiles/i3/* setlocal filetype=i3config
+autocmd BufRead,BufNewFile /home/martin/dotfiles/i3/* setlocal filetype=i3config
 
 :tnoremap <esc> <C-\><C-n>
 function CP2XCLIP()

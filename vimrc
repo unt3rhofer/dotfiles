@@ -1,4 +1,5 @@
 autocmd BufRead,BufNewFile /home/martin/Dotfiles/i3/* setlocal filetype=i3config
+autocmd BufRead,BufNewFile /home/martin/Dotfiles/sway/* setlocal filetype=i3config
 
 syntax on
 

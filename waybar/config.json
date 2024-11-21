@@ -1,0 +1,23 @@
+{
+    "layer": "top",
+    "modules-left": [
+        {
+            "custom/battery": {
+                "exec": "echo \"There are $(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E 'percentage' | awk '{print $2}' | tr -d '%') kittens in my bed \"",
+                "interval": 1,
+                "format": "\uf0e7{output}"
+            }
+        }
+    ],
+    "modules-center": [],
+    "modules-right": [
+        {
+            "custom/time": {
+                "exec": "date '+%Y-%m-%d %H:%M:%S'",
+                "interval": 1,
+                "format": "{output}"
+            }
+        }
+    ],
+    "separator": true
+}

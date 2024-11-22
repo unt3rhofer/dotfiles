@@ -6,46 +6,23 @@ background = #24273a
 foreground = #cad3f5
 border-color = #181926
 border-size = 2
-padding-left = 5
-padding-right = 5
-module-margin = 3
+padding-left = 10
+padding-right = 10
+module-margin = 5
 
-font-0 = "Sybol Nerd Font:size=10;weight=regular"
+font-0 = "Noto Sans:size=10;weight=regular"
 font-1 = "FontAwesome:size=10;weight=regular"
 
 modules-left = workspaces
-modules-right = date time battery network
+modules-right = date time battery network volume
 
 [module/workspaces]
 type = internal/xworkspaces
 pin-workspaces = true
-enable-click = true
-enable-scroll = true
-reverse-scroll = false
-spacing = 10
-
-; Map workspace names to icons
-icon-0 =  ; Workspace 1
-icon-1 =  ; Workspace 2
-icon-2 =  ; Workspace 3
-icon-3 =  ; Workspace 4
-icon-4 =  ; Workspace 5
-icon-5 =  ; Workspace 6
-icon-6 =  ; Workspace 7
-icon-7 =  ; Workspace 8
-icon-8 =  ; Workspace 9
-icon-9 =  ; Workspace 10
-icon-10 = #1 ; Workspace 11
-icon-11 = #2 ; Workspace 12
-icon-12 = #3 ; Workspace 13
-icon-13 = #4 ; Workspace 14
-icon-14 = #5 ; Workspace 15
-
-; Icons for specific workspaces
-label-active = %icon%
-label-occupied = %icon%
-label-urgent = %icon%
-label-empty = %icon%
+format = %{F#8aadf4} %{F-}%name%
+format-occupied = %{F#91d7e3} %{F-}%name%
+format-urgent = %{F#ed8796} %{F-}%name%
+format-empty = %{F#6e738d} %{F-}%name%
 
 [module/date]
 type = internal/date
@@ -75,4 +52,16 @@ interface = wlan0
 interval = 5
 label-connected = %{F#8bd5ca} %{F-}%essid%
 label-disconnected = %{F#ed8796}%{F-}
+
+[module/volume]
+type = internal/volume
+master-mixer = Master
+interval = 1
+label-muted = %{F#f0c6c6} %{F-}Muted
+label-volume = %{F#f5a97f} %{F-}%percentage%%
+format-padding = 2
+scroll-up = volume+5
+scroll-down = volume-5
+click-left = pactl set-sink-mute @DEFAULT_SINK@ toggle
+click-right = pactl set-sink-volume @DEFAULT_SINK@ 100%
 

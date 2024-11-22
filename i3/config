@@ -12,3 +12,6 @@ set $refresh_i3status killall -SIGUSR1 i3status
 
 #Autotiling
 exec_always autotiling
+
+#Polybar
+exec polybar

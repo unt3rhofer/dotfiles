@@ -10,7 +10,7 @@ padding-left = 5
 padding-right = 5
 module-margin = 3
 
-font-0 = "Sybol Nerd Font:size=10;weight=regular"
+font-0 = "Noto Sans:size=10;weight=regular"
 font-1 = "FontAwesome:size=10;weight=regular"
 
 modules-left = workspaces
@@ -22,30 +22,11 @@ pin-workspaces = true
 enable-click = true
 enable-scroll = true
 reverse-scroll = false
-spacing = 10
-
-; Map workspace names to icons
-icon-0 =  ; Workspace 1
-icon-1 =  ; Workspace 2
-icon-2 =  ; Workspace 3
-icon-3 =  ; Workspace 4
-icon-4 =  ; Workspace 5
-icon-5 =  ; Workspace 6
-icon-6 =  ; Workspace 7
-icon-7 =  ; Workspace 8
-icon-8 =  ; Workspace 9
-icon-9 =  ; Workspace 10
-icon-10 = #1 ; Workspace 11
-icon-11 = #2 ; Workspace 12
-icon-12 = #3 ; Workspace 13
-icon-13 = #4 ; Workspace 14
-icon-14 = #5 ; Workspace 15
-
-; Icons for specific workspaces
-label-active = %icon%
-label-occupied = %icon%
-label-urgent = %icon%
-label-empty = %icon%
+spacing = 15
+label-active = %{F#8aadf4}%name%
+label-occupied = %{F#91d7e3}%name%
+label-urgent = %{F#ed8796}%name%
+label-empty = %{F#6e738d}%name%
 
 [module/date]
 type = internal/date
@@ -75,4 +56,3 @@ interface = wlan0
 interval = 5
 label-connected = %{F#8bd5ca} %{F-}%essid%
 label-disconnected = %{F#ed8796}%{F-}
-

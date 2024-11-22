@@ -1,6 +1,6 @@
 #!bin/i3config
 #FONT
-font pango:System Nerd Font 9
+font pango:Noto Sans 10
 
 #WINDOW CUSTOMIZATION
 set $bg-color            #494D64
@@ -22,25 +22,8 @@ default_border pixel 2
 gaps inner 7
 gaps outer 5
 
-#BAR
-
-bar {
-       # status_command i3blocks -c /etc/i3blocks.conf
-                status_command i3blocks
-                strip_workspace_numbers yes
-                colors {
-                background $bg-color
-                separator #757575
-                #                  border             background         text
-                focused_workspace  $bg-color          $bg-color          $text-color
-                inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-                urgent_workspace   $urgent-bg-color   $urgent-bg-color   $inactive-text-color
-        }
-}
-
 #WALLPAPER
 exec_always feh --bg-scale ~/Pictures/Wallpapers/wallpaper_samurai+temple.png
-
 
 #TRANSPARENCY
 exec_always picom

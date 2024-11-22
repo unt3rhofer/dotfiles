@@ -7,8 +7,9 @@ foreground = #cad3f5
 border-color = #181926
 border-size = 2
 padding-left = 5
-padding-right = 1
-module-margin = 2
+padding-right = 5
+module-margin = 3
+
 
 font-0 = "System Nerd Font:style=Bold:pixelsize=10;3"
 font-1 = "FontAwesome:pixelsize=10;2"
@@ -23,22 +24,12 @@ enable-click = true
 enable-scroll = true
 reverse-scroll = false
 spacing = 10
+strip-wsnumbers = true
 
-ws-icon-1 = "1;1"
-ws-icon-2 = "2;2"
-ws-icon-3 = "3;3"
-ws-icon-4 = "4;"
-ws-icon-5 = "5;"
-ws-icon-6 = "6;"
-ws-icon-7 = "7;"
-ws-icon-8 = "8;"
-ws-icon-9 = "9; "
-ws-icon-10 = "10;"
-
-label-active = %{F#8aadf4}%name% %{F-}
-label-occupied = %{F#91d7e3}%name% %{F-}
-label-urgent = %{F#ed8796}%name% %{F-}
-label-empty = %{F#6e738d}%name% %{F-}
+label-active = %{F#8aadf4}%name%
+label-occupied = %{F#91d7e3}%name%
+label-empty = %{F#6e738d}%name%
+label-urgent = %{F#ed8796}%name%
 
 [module/date]
 type = internal/date
@@ -57,7 +48,7 @@ label = %{F#8aadf4} %{F-}%time%
 type = internal/battery
 battery = BAT0
 adapter = AC
-poll-interval = 30
+poll-interval = 5
 label-charging = %{F#a6da95} %{F-}%percentage%%
 label-discharging = %{F#ed8796} %{F-}%percentage%%
 label-full = %{F#a6da95} %{F-}%percentage%%

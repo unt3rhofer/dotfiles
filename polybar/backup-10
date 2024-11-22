@@ -68,4 +68,3 @@ interface = wlan0
 interval = 5
 label-connected = %{F#8bd5ca} %{F-}%essid%
 label-disconnected = %{F#ed8796}%{F-}
-

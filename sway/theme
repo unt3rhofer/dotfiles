@@ -1,12 +1,3 @@
-set $mod Mod4
-
-include /home/martin/.config/sway/appearance
-include /home/martin/.config/sway/keybinds
-include /home/martin/.config/sway/peripherals
-#include /home/martin/.config/sway/theme
-include /home/martin/.config/sway/workspaces
-
-exec_always autotiling
 set $gtk_theme Arc-Dark
 set $icon_theme Papirus
 

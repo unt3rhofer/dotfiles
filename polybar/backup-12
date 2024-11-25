@@ -10,7 +10,7 @@ padding-left = 5
 padding-right = 1
 module-margin = 2
 
-font-0 = "Monospace:style=Bold:pixelsize=10;3"
+font-0 = "System Nerd Font:style=Bold:pixelsize=10;3"
 font-1 = "FontAwesome:pixelsize=10;2"
 
 modules-left = workspaces
@@ -24,21 +24,21 @@ enable-scroll = true
 reverse-scroll = false
 spacing = 10
 
-ws-icon-1 = "1;1"
-ws-icon-2 = "2;2"
-ws-icon-3 = "3;3"
-ws-icon-4 = "4;"
-ws-icon-5 = "5;"
-ws-icon-6 = "6;"
-ws-icon-7 = "7;"
-ws-icon-8 = "8;"
-ws-icon-9 = "9; "
-ws-icon-10 = "10;"
+ws-icon-1 = "1"
+ws-icon-2 = "2"
+ws-icon-3 = "3"
+ws-icon-4 = ""
+ws-icon-5 = ""
+ws-icon-6 = ""
+ws-icon-7 = ""
+ws-icon-8 = ""
+ws-icon-9 = " "
+ws-icon-10 = "1"
 
-label-active = %{F#8aadf4}%name% %{F-}
-label-occupied = %{F#91d7e3}%name% %{F-}
-label-urgent = %{F#ed8796}%name% %{F-}
-label-empty = %{F#6e738d}%name% %{F-}
+label-active = %{F#8aadf4}%icon% %{F-}
+label-occupied = %{F#91d7e3}%icon% %{F-}
+label-urgent = %{F#ed8796}%icon% %{F-}
+label-empty = %{F#6e738d}%icon% %{F-}
 
 [module/date]
 type = internal/date

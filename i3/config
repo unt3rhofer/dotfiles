@@ -14,4 +14,4 @@ set $refresh_i3status killall -SIGUSR1 i3status
 exec_always autotiling
 
 #Polybar
-exec polybar
+exec_always bash /home/martin/Dotfiles/polybar/scripts/startup.sh

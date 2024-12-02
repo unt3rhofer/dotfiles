@@ -7,11 +7,10 @@ set $mod Mod4
 
 exec --no-startup-id dex-autostart --autostart --environment i3
 exec --no-startup-id nm-applet
-#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 set $refresh_i3status killall -SIGUSR1 i3status
 
 #Autotiling
-exec_always autotiling
+exec_always --no-startup-id autotiling
 
 #Polybar
-exec_always bash /home/martin/Dotfiles/polybar/scripts/startup.sh
+#exec_always bash /home/martin/Dotfiles/polybar/scripts/startup.sh

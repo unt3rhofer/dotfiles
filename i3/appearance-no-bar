@@ -18,31 +18,12 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $inactive-text-co
 
 default_border pixel 2
 
-bar {
-    status_command i3blocks
-    position bottom
-    font pango:monospace 10;3
-    tray_output primary
-	padding 0
-    colors {
-        background #222222
-        statusline #dddddd
-        separator  #666666
-
-        # Color for focused window borders and indicators
-        focused_workspace   #285577 #ffffff #4c7899
-        active_workspace    #333333 #ffffff #5f676a
-        inactive_workspace  #222222 #888888 #333333
-        urgent_workspace    #2f343a #e84f4f #900000
-    }
-}
-
 #Gaps
 gaps inner 7
 gaps outer 5
 
 #WALLPAPER
-exec_always feh --bg-scale ~/Pictures/Wallpapers/wallpaper_samurai+temple.png
+exec_always feh --bg-scale ~/Dotfiles/Wallpapers/wallpaper_samurai+temple.png
 
 #TRANSPARENCY
 exec_always picom

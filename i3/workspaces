@@ -51,14 +51,14 @@ bindsym $mod+Shift+Mod1+5 move container to workspace number $ws15
 
 #BINDING APPLICATIONS
 #Telegram
-assign [class="Google-chrome" instance="crx_ibblmnobmgdmpoeblocemifbpglakpoi"] $ws10
+#assign [class="Google-chrome" instance="crx_ibblmnobmgdmpoeblocemifbpglakpoi"] $ws10
 #WhatsApp
-assign [class="Google-chrome" instance="crx_hnpfjngllnobngcgfapefoaidbinmjnm"] $ws10
+#assign [class="Google-chrome" instance="crx_hnpfjngllnobngcgfapefoaidbinmjnm"] $ws10
 #Discord
-assign [class="discord"] $ws10
+#assign [class="discord"] $ws10
 #Kitty
 #assign [class="kitty"] $ws2
 #Pavucontroll
-assign [class="pavucontrol"] $ws8
+#assign [class="pavucontrol"] $ws8
 #Blueman
-assign [class="Blueman-manager"] $ws9
+#assign [class="Blueman-manager"] $ws9

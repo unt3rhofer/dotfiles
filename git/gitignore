@@ -1,0 +1,4 @@
+#Ignore gitconfig
+home/martin/Dotfiles/git/gitignore
+#Private file
+home/martin/Dotfiles/git/gitconfig

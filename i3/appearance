@@ -3,7 +3,8 @@
 font pango:Noto Sans 10
 
 #WINDOW CUSTOMIZATION
-set $bg-color            #494D64
+#Catpuccin Machiato
+set $bg-color            #181926
 set $active-win-bord	 #F5BDE6
 set $inactive-bg-color   #5B6078
 set $text-color          #B8C0E0
@@ -18,12 +19,28 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $inactive-text-co
 
 default_border pixel 2
 
+bar {
+    status_command i3blocks
+    position bottom
+    colors {
+        background $bg-color
+        statusline $text-color
+        separator  $inactive-bg-color
+
+        # Color for focused window borders and indicators
+        focused_workspace   $bg-color $bg-color $text-color
+        active_workspace    $inactive-bg-color $text-color $inactive-bg-color
+        inactive_workspace  $bg-color $inactive-text-color $bg-color
+        urgent_workspace    $urgent-bg-color $inactive-text-color $urgent-bg-color
+    }
+}
+
 #Gaps
 gaps inner 7
 gaps outer 5
 
 #WALLPAPER
-exec_always feh --bg-scale ~/Pictures/Wallpapers/wallpaper_samurai+temple.png
+exec_always feh --bg-scale ~/Dotfiles/Wallpapers/wallpaper_samurai+temple.png
 
 #TRANSPARENCY
 exec_always picom

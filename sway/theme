@@ -1,9 +1,0 @@
-set $gtk_theme Arc-Dark
-set $icon_theme Papirus
-
-exec_always export GTK_THEME=$gtk_theme
-exec_always export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
-exec_always export GTK3_SETTINGS_FILE="$HOME/.config/gtk-3.0/settings.ini"
-exec_always export GTK_ICON_THEME=$icon_theme
-exec_always export XDG_CURRENT_DESKTOP=sway
-

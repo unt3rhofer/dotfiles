@@ -5,10 +5,10 @@ font pango:Noto Sans 10
 #WINDOW CUSTOMIZATION
 #Catpuccin Mocha
 set $background            #1e1e2e
-set $active-border	       #cba6f7
+set $active-border         #cba6f7
 set $inactive-bg           #181825
-set $text          		   #cdd6f4
-set $inactive-text 		   #6c7086
+set $text                  #cdd6f4
+set $inactive-text         #6c7086
 set $bar-active-ws-text    #cba6f7
 set $bar-inactive-ws-text  #f5e0dc
 

@@ -4,19 +4,19 @@ font pango:Noto Sans 10
 
 #WINDOW CUSTOMIZATION
 #Catpuccin Mocha
-set $background           #1e1e2e
-set $active-border	      #cba6f7
-set $inactive-bg          #181825
-set $text          		  #cdd6f4
-set $inactive-text 		  #6c7086
-set $bar-active-ws-text   #cba6f7
-set $bar-inactive-ws-text #f5e0dc
+set $background            #1e1e2e
+set $active-border	       #cba6f7
+set $inactive-bg           #181825
+set $text          		   #cdd6f4
+set $inactive-text 		   #6c7086
+set $bar-active-ws-text    #cba6f7
+set $bar-inactive-ws-text  #f5e0dc
 
-#                       border         background        text           indicator
-client.focused          $active-border $active-border    $text          $active-border
-client.unfocused        $inactive-bg   $inactive-bg      $inactive-text $background
-client.focused_inactive $inactive-bg   $inactive-bg      $inactive-text $background
-client.urgent           $inactive-bg   $inactive-bg      $inactive-text $background
+#                        border          background      text            indicator
+client.focused           $active-border  $active-border  $text           $active-border
+client.unfocused         $inactive-bg    $inactive-bg    $inactive-text  $background
+client.focused_inactive  $inactive-bg    $inactive-bg    $inactive-text  $background
+client.urgent            $inactive-bg    $inactive-bg    $inactive-text  $background
 
 default_border pixel 2
 

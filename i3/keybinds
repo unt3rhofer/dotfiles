@@ -13,8 +13,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 #DMENU
-#bindsym $mod+d exec --no-startup-id dmenu_run -nb '#2f343f' -nf '#676e7d' -sb '#2f343f' -sf '#f3f4f5' -fn 'monospace-8'
-bindsym $mod+d exec --no-startup-id dmenu_run -nb '#494D64' -nf '#B8C0E0' -sb '#5B6078' -sf '#A5ADCB' -fn 'Symbols Nerd Font-10'
+bindsym $mod+d exec --no-startup-id dmenu_run -nb '#1e1e2e' -nf '#f5e0dc' -sb '#181825' -sf '#cba6f7' -fn 'Noto Sans-12'
 
 
 
